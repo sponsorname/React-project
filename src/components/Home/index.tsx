@@ -1,20 +1,31 @@
 import Container from "#components/Container";
+import data from "#data/Students"
 
-function index() {
+function Home() {
   return (
-    <Container >
+    <Container>
       <div className="container">
         <h1>HOME PAGE</h1>
+        <hr />
+        {data.map((d) =>
+        <div className="card">
+          <img src={d.photo} alt="Avatar" style={{ width: "100%" }} />
+          <div className="container">
+            <h4>
+              <b>{d.Name}</b>
+            </h4>
+            <p>{d.Faculty}</p>
+          </div>
+        </div>
+    )}
+    </div>
+     {/*  (
         <p>
-          {" "}
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus
-          fuga quod explicabo ipsam, placeat enim vel totam sit, est quaerat
-          consequuntur consectetur culpa repudiandae doloribus labore harum iste
-          aperiam debitis.
+          {d.Name} | {d.Address}
         </p>
-      </div>
+      ))}*/}
     </Container>
   );
 }
 
-export default index;
+export default Home;
