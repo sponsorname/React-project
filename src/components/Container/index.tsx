@@ -1,18 +1,19 @@
-import { ReactNode } from 'react';
-import NavBar from '#components/NavBar';
-import Footer from '#components/Footer';
+import { ReactNode } from "react";
+import Header from "#components/Header";
+import Footer from "#components/Footer";
 
 interface ContainerProps {
-    children: ReactNode;
+  children: ReactNode;
 }
-const Container = ({ children,
-}: ContainerProps) => {
-    return (
-        <> 
-            <NavBar />
-                {children}
-            <Footer />
-        </>
-    );
+const Container = ({ children }: ContainerProps) => {
+  return (
+    <>
+      <div className="d-flex flex-column min-vh-100">
+        <Header />
+        {children}
+        <Footer />
+      </div>
+    </>
+  );
 };
 export default Container;

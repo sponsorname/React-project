@@ -1,31 +1,34 @@
-import Container from "#components/Container";
-import data from "#data/Students"
+import { Link } from "react-router-dom"
 
-function Home() {
+import Container from "#components/Container";
+import data from "#data/Students";
+
+const Body: React.FC = () => {
   return (
     <Container>
-      <div className="container">
-        <h1>HOME PAGE</h1>
-        <hr />
-        {data.map((d) =>
-        <div className="card">
-          <img src={d.photo} alt="Avatar" style={{ width: "100%" }} />
-          <div className="container">
-            <h4>
-              <b>{d.Name}</b>
-            </h4>
-            <p>{d.Faculty}</p>
+    <div className="container my-5">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        {data.map((student) => (
+          <div className="col" key={student.ID}>
+            <div className="card h-100">
+              <img src={student.photo} className="card-img-top" alt={student.Name} style={{ height: '150px', objectFit: 'cover' }} />
+              <div className="card-body">
+                <h6 className="card-title">{student.Name}</h6>
+                <p className="card-text">{student.Faculty}</p>
+                <Link
+                  to={`/home/${student.ID}`}
+                  className="btn btn-primary mt-auto w-100"
+                >
+                  View Details
+                </Link>
+              </div>
+            </div>
           </div>
-        </div>
-    )}
+        ))}
+      </div>
     </div>
-     {/*  (
-        <p>
-          {d.Name} | {d.Address}
-        </p>
-      ))}*/}
     </Container>
   );
-}
+};
 
-export default Home;
+export default Body;
