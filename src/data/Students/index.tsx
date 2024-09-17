@@ -147,7 +147,6 @@ let data = [
     Faculty: "Science",
     photo: "https://via.placeholder.com/150",
   },
-  // Add more students as needed, ensuring unique ID values...
 ];
 
 export default data;

@@ -57,13 +57,13 @@ const Header: React.FC = () => {
             </li>
 
 
-            {/* Get API Data Link */}
+            {/* Get API Product */}
             <li className="nav-item">
               <NavLink
                 className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
-                to="/GetAPIData"
+                to="/product"
               >
-                Get API Data
+                Product
               </NavLink>
             </li>
             

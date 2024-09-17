@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import data from '#data/Students';  // Adjust path as necessary
+import data from '#data/Students'; 
 import Container from '#components/Container';
 
 const Detail: React.FC = () => {
@@ -22,21 +22,18 @@ const Detail: React.FC = () => {
     <Container>
       <div className="my-5">
         <div className="row align-items-stretch">
-          {/* Image Section */}
           <div className="col-md-4 d-flex justify-content-center">
             <img
               src={student.photo}
               alt={student.Name}
               className="img-fluid rounded-circle border border-3 border-primary"
               style={{ 
-                maxWidth: '250px',  // Set a fixed maximum width for the image
+                maxWidth: '250px', 
                 height: 'auto', 
                 boxShadow: '0 4px 8px rgba(0, 0, 0, 0.2)' 
               }}
             />
           </div>
-
-          {/* Details Section */}
           <div className="col-md-8">
             <div className="bg-light p-4 rounded shadow-sm d-flex flex-column h-100">
               <h1 className="mb-4 text-primary">Details for {student.Name}</h1>
