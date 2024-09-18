@@ -61,12 +61,18 @@ const Header: React.FC = () => {
             <li className="nav-item">
               <NavLink
                 className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
-                to="/product"
-              >
+                to="/product">
                 Product
               </NavLink>
             </li>
-            
+               {/* Get Login */}
+            <li className="nav-item">
+              <NavLink
+                className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
+                to="/Login">
+                Login
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>

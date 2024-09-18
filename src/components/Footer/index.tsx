@@ -15,6 +15,9 @@ const Footer: React.FC = () => {
           <li className="list-inline-item">
             <a href="/privacy" className="text-white text-decoration-none">Privacy Policy</a>
           </li>
+          <li className="list-inline-item">
+            <a href="/privacy" className="text-white text-decoration-none">Login</a>
+          </li>
         </ul>
       </div>
     </footer>
