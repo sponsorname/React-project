@@ -4,7 +4,6 @@ import ProductInterface from "#interfaces/ProductInferface";
 import { useNavigate } from "react-router-dom";
 
 
-
 function Product() {
   const [products, setProducts] = useState<ProductInterface[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -68,12 +67,12 @@ function Product() {
                       style={{ maxHeight: "200px", objectFit: "contain" }}
                     />
                     <div className="card-body">
-                      <h5 className="card-title">{product.title.slice(0,25)}..</h5>
+                      <h5 className="card-title" onClick={() => navigate(`/product/${product.id}`)}>{product.title.slice(0,20)}..</h5>
                       <p className="card-text text-muted">
                         <small>{product.category}</small>
                       </p>
                       <p className="card-text">
-                        {product.description.slice(0, 100)}...
+                        {product.description.slice(0, 80)}...
                       </p>
                       <p className="card-text">
                         <strong>Price: ${product.price.toFixed(2)}</strong>

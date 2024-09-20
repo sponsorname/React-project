@@ -1,14 +1,14 @@
 import Container from "#components/Container";
 
-function index() {
+function About() {
   return (
-    <Container >
-      <div className="container">
-        <h1>ABOUT</h1>
-       
+    <Container>
+      <div className="container text-center">
+        
+
       </div>
     </Container>
   );
 }
 
-export default index;
+export default About;

@@ -14,9 +14,11 @@ function UserDetails() {
 
   return (
     <Container>
-    <div className="container mt-5">
-      <div className="d-flex justify-content-between align-items-center mb-4">
-        <h2 className="text-center mb-0">USER DETAILS</h2>
+   <div className="container mt-5">
+  <div className="d-flex justify-content-between align-items-center mb-4">
+    <h2 className="text-center mb-0" style={{ fontSize: '28px', fontWeight: 'bold', color: '#333' }}>
+      User Details
+    </h2>
         
         {/* Add User Button */}
         <button className="btn btn-success" onClick={handleAddUser}>
@@ -66,7 +68,7 @@ function UserDetails() {
         <div className="col-1">
           <button className="btn btn-sm btn-primary me-2">EDIT</button>
           <button className="btn btn-sm btn-danger">DELETE</button>
-        </div>
+        </div> 
       </div>
       <div className="row py-2 align-items-center border-bottom">
         <div className="col-1">4</div>
@@ -108,7 +110,7 @@ function UserDetails() {
         <button className="btn btn-secondary" onClick={handleBackToHome}>
           Back to Home
         </button>
-      </div>
+     </div>     
     </div>
     </Container>
   );
