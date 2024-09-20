@@ -159,10 +159,53 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      {/* Features Section */}
       <div className="container my-5">
         <div className="row text-center">
-          {/* Feature cards */}
+          <div className="col-md-4 mb-4">
+            <div
+              className="card border-0 shadow-lg h-100"
+              style={{ backgroundColor: '#e3f2fd' }} // Light blue background
+            >
+              <div className="card-body d-flex flex-column">
+                <i className="bi bi-cart-fill display-3 text-primary"></i>
+                <h5 className="card-title mt-3 text-primary">Products</h5>
+                <p className="card-text text-muted">Browse our extensive product range.</p>
+                <Link to="/product" className="btn btn-primary mt-auto">
+                  View Products
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div
+              className="card border-0 shadow-lg h-100"
+              style={{ backgroundColor: '#e8f5e9' }} // Light green background
+            >
+              <div className="card-body d-flex flex-column">
+                <i className="bi bi-tags-fill display-3 text-success"></i>
+                <h5 className="card-title mt-3 text-success">Deals</h5>
+                <p className="card-text text-muted">Discover our latest discounts and special offers.</p>
+                <Link to="#" className="btn btn-success mt-auto">
+                  Explore Deals
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-4">
+            <div
+              className="card border-0 shadow-lg h-100"
+              style={{ backgroundColor: '#fff8e1' }} // Light yellow background
+            >
+              <div className="card-body d-flex flex-column">
+                <i className="bi bi-info-circle-fill display-3 text-warning"></i>
+                <h5 className="card-title mt-3 text-warning">About Us</h5>
+                <p className="card-text text-muted">Learn more about our story and values.</p>
+                <Link to="/about" className="btn btn-warning mt-auto">
+                  About Us
+                </Link>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Container>
