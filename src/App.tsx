@@ -10,7 +10,6 @@ import About from "#components/About";
 import Contact from "#components/Contact";
 import PageNotFound from "#components/Error 404";
 import Home from "#components/Home";
-import Detail from '#components/Detail';
 import Product from '#components/Product';
 import ProductDetails from '#components/ProductDetails';
 import Login from '#components/Login';
@@ -20,7 +19,6 @@ const router = createBrowserRouter(
     <>
     <Route path="/" element={<Home />} />
       <Route path="/home" element={<Home />} />
-      <Route path="/home/:id" element={<Detail />} />
       <Route path="/about" element={<About />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/product" element={<Product />} />
