@@ -38,7 +38,7 @@ const Home: React.FC = () => {
         className="hero-section text-light text-center d-flex flex-column justify-content-center align-items-center"
         style={{
           height: "100vh",
-          background: "linear-gradient(to right, #ac8e63, #976d2b)",
+          background: "linear-gradient(to right, #ffffff, #ffffff)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           position: "relative",
